@@ -16,6 +16,28 @@ APP TUTI
 - [x] POST Component functionality
 - [ ] Responsive Sidebar
 
+## Screenshot
+
+### Dashboard
+
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/dashboard.png)
+
+### Login
+
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/login.png)
+
+### Register
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/register.png)
+
+### GET
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/get.png)
+
+### POST
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/post.png)
+
+### User Management
+![](https://github.com/uisyudha/angular-tuti-app/raw/master/screenshot/user-manage.png)
+
 ## Acknowledge 
 - [Angular Material Dashboard](https://github.com/wangdicoder/angular-material-dashboard)
 - [Creative Tim](https://github.com/creativetimofficial)
