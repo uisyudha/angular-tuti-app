@@ -126,6 +126,10 @@ b{
   outline: none;
 }
 
+.swal2-popup {
+  font-size: 1.6rem !important;
+}
+
 /* loading style*/
 .loader {
   margin: 0 auto;

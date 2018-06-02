@@ -101,3 +101,12 @@ form{
   justify-content: flex-end;
   padding-right: 15px;
 }
+
+.radio-data-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.radio-data-button {
+  margin: 5px;
+}

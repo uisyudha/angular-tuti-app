@@ -36,3 +36,12 @@
 .card-title{
   padding-left: 80px;
 }
+
+.spinner-container {
+  left: 40%;
+  position: absolute
+}
+
+.spinner-container mat-spinner {
+  margin-top: 70%
+}

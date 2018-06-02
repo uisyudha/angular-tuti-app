@@ -1,60 +1,23 @@
-# Angular2 Material Dashboard Pro
+# TUTI APP
 
-Material-design Dashboard
+APP TUTI
 
 ## How to run it
 
 **- please ensure you have installed angular cli, otherwise `npm install -g @angular/cli`**
 
-1. git clone https://github.com/wangdicoder/angular-material-dashboard
-2. cd angular-material-dashboard
+1. git clone https://github.com/uisyudha/angular-tuti-app.git
+2. cd angular-tuti-app
 3. npm install
-4. ng serve -o (it will automatically open localhost:4200)
+4. ng serve -o (it will automatically open localhost:4200) or npm start
+5. Run your flask-api
 
 ## Further Plan
-- [x] Add Wizard Component
+- [x] POST Component functionality
 - [ ] Responsive Sidebar
-- [ ] Consolidate form elements, like switch
-
-## Screenshot
-
-### Dashboard
-
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/dashboard.png)
-
-### Login
-
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/login.png)
-
-### Register
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/register.png)
-
-### Lock
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/lock.png)
-
-### User Profile
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/profile.png)
-
-### Sweet Alert
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/sweetalert.gif)
-
-### Notification
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/notification.gif)
-
-### Settings
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/settings.gif)
-
-### Table
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/table.png)
-
-### Price
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/price.png)
-
-### Panels
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/panel.png)
 
 ## Acknowledge 
-
+- [Angular Material Dashboard](https://github.com/wangdicoder/angular-material-dashboard)
 - [Creative Tim](https://github.com/creativetimofficial)
 - [Sweet Alert 2](https://github.com/limonte/sweetalert2)
 - [Bootstrap Notify](http://bootstrap-notify.remabledesigns.com)
