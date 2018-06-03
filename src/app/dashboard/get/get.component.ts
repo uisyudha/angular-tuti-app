@@ -14,7 +14,6 @@ export class GetComponent implements OnInit {
   ];
   private token = localStorage.getItem('token')
   private result: string;
-  private topic: string;
 
 
   constructor(private _userService: UserService) { }
@@ -23,31 +22,51 @@ export class GetComponent implements OnInit {
 
   }
 
+  ngAfterViewInit() {
+    const activeTabs = document.getElementsByClassName('default-active');
+    for (let i = 0; i < activeTabs.length; i++) {
+      (<HTMLElement>activeTabs[i]).click();
+    }
+  }
+
+  tabClick(evt, id) {
+    const tabcontents = document.querySelectorAll('.h-tab .tab-content');
+    for (let i = 0; i < tabcontents.length; i++) {
+      (<HTMLElement>tabcontents[i]).style.display = 'none';
+    }
+    const tablinks = document.querySelectorAll('.h-tab .tab-link');
+    for (let i = 0; i < tablinks.length; i++) {
+      const tablink = <HTMLElement>tablinks[i];
+      tablink.className = tablink.className.replace(' active', '');
+    }
+    document.getElementById(id).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  }
+  vTabClick(evt, id) {
+    const tabcontents = document.querySelectorAll('.v-tab .tab-content');
+    for (let i = 0; i < tabcontents.length; i++) {
+      (<HTMLElement>tabcontents[i]).style.display = 'none';
+    }
+    const tablinks = document.querySelectorAll('.v-tab .tab-link');
+    for (let i = 0; i < tablinks.length; i++) {
+      const tablink = <HTMLElement>tablinks[i];
+      tablink.className = tablink.className.replace(' active', '');
+    }
+    document.getElementById(id).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  }
+
   getData() {
-    if (this.dataType == 'Text') {
-      this._userService.getData(this.topic)
-        .subscribe(
-        res => {
-          this.result = res.toString();
-          console.log(res)
-        },
-        err => {
-          console.log(err)
-        }
-        )
-    }
-    else {
-      this._userService.getData(this.dataType.toLowerCase())
-        .subscribe(
-        res => {
-          this.result = res.toString();
-          console.log(res)
-        },
-        err => {
-          console.log(err)
-        }
-        )
-    }
+    this._userService.getData(this.dataType.toLowerCase())
+      .subscribe(
+      res => {
+        this.result = JSON.stringify(res)
+        console.log(res)
+      },
+      err => {
+        console.log(err)
+      }
+      )
   }
 
 

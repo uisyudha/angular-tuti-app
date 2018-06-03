@@ -8,9 +8,8 @@ import { MatButtonModule, MatRadioModule, MatInputModule, MatMenuModule, MatChec
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { HomeComponent } from './dashboard/home/home.component';
 import { GetComponent } from './dashboard/get/get.component';
-import { PostComponent } from './dashboard/post/post.component';
+
 import 'hammerjs';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FigurecardComponent } from './shared/figurecard/figurecard.component';
@@ -38,7 +37,6 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
   declarations: [
     AppComponent,
     SidebarComponent,
-    HomeComponent,
     GetComponent,
     NavbarComponent,
     FigurecardComponent,
@@ -50,7 +48,6 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    PostComponent
   ],
   imports: [
     BrowserModule,

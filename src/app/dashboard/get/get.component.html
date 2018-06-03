@@ -1,5 +1,62 @@
 <div class="container">
   <app-navbar title="GET"></app-navbar>
+  <div class="row" style="margin-top: 10px">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="material-icons">assignment</i>
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">SOP</h4>
+          <div class="row v-tab page-title">
+            <div class="col-md-2">
+              <button mat-raised-button class="btn btn-info btn-round btn-block tab-link default-active" (click)="vTabClick($event, 'one')">POST</button>
+              <button mat-raised-button class="btn btn-info btn-round btn-block tab-link" (click)="vTabClick($event, 'two')">GET</button>
+            </div>
+            <div class="col-md-8">
+              <div id="one" class="tab-content">
+                <ol>
+                  <li>Lakukan login terlebih dahulu untuk mendapatkan token</li>
+                  <li>Silahkan gunakan salah satu API Tester Untuk mengakses fungsi post</li>
+                  <li>Silahkan masukkan path pada kolom skema yang telah disediakan</li>
+                  <li>
+                    Tambahkan header dengan nama header
+                    <strong>Authorization</strong> dan value
+                    <strong>Bearer (token yang didapatkan setelah login)</strong>
+                  </li>
+                  <li>Masukkan data yang mau di post pada kolom Body</li>
+                  <li>Pilih method
+                    <strong>POST</strong>
+                  </li>
+                  <li>Klik tombol
+                    <strong>Send</strong>
+                  </li>
+                </ol>
+              </div>
+              <div id="two" class="tab-content">
+                <ol>
+                  <li>Lakukan login terlebih dahulu untuk mendapatkan token</li>
+                  <li>Silahkan gunakan salah satu API Tester Untuk mengakses fungsi GET</li>
+                  <li>Silahkan masukkan path pada kolom skema yang telah disediakan</li>
+                  <li>
+                    Tambahkan header dengan nama header
+                    <strong>Authorization</strong> dan value
+                    <strong>Bearer (token yang didapatkan setelah login)</strong>
+                  </li>
+                  <li>Pilih method
+                    <strong>GET</strong>
+                  </li>
+                  <li>Klik tombol
+                    <strong>Send</strong>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row" style="margin-top: 30px">
     <div class="col-md-12">
       <div class="card">
@@ -12,7 +69,7 @@
             <div class="row">
               <div class="col-md-12">
                 <mat-input-container color="accent">
-                  <input  disabled matInput type="text" placeholder="Input Token" name="token" value="{{token}}">
+                  <input disabled matInput type="text" placeholder="Input Token" name="token" value="{{token}}">
                 </mat-input-container>
               </div>
             </div>
@@ -24,13 +81,6 @@
                     {{type}}
                   </mat-radio-button>
                 </mat-radio-group>
-              </div>
-            </div>
-            <div *ngIf="dataType == 'Text'" class="row">
-              <div class="col-md-12">
-                <mat-input-container color="accent">
-                  <input matInput type="text" placeholder="Topic"  [(ngModel)]="topic" name="topic">
-                </mat-input-container>
               </div>
             </div>
             <div class="row action-btn">
